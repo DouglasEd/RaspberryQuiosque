@@ -5,11 +5,11 @@ After=graphical.target
  
 [Service]
 Environment=DISPLAY=:0
-Environment=XAUTHORITY=/home/pythonisa/.Xauthority
+Environment=XAUTHORITY=/home/{User}/.Xauthority
 Type=simple
 ExecStart=/bin/bash /usr/local/bin/kiosk.sh
 Restart=on-abort
-User=pythonisa
+User={User}
  
 [Install]
 WantedBy=graphical.target
